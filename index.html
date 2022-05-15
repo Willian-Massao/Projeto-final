@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/PC.css">
+    <link rel="stylesheet" media="(max-width: 957px)" href="css/Mobile.css">
+    <script src="https://kit.fontawesome.com/4783f14bfa.js" crossorigin="anonymous"></script>
+    <script src="script/script.js"></script>
+    <script>
+
+    </script>
+    <title>Document</title>
+</head>
+<body onload="">
+    <div class="autoscrolltop">
+        <button onclick="aa()">
+            <i class="fa-solid fa-arrow-up fa-2xl"></i>
+        </button>
+    </div>
+    <section id="container">
+        <div id="background">
+            <span id="span-background">
+                <button id="btnE" onclick="Switch(0)"></button>
+                <button id="btnD" onclick="Switch(1)"></button>
+            </span>
+        </div>
+        <header>
+            <button id="mobilebtn" onclick="apper(0)">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <button class="menu"></button>
+            <div id="logodiv">
+                <p class="tittle">SuperMercado</p>
+                <img src="src/logoA.png" alt="" class="logo">
+            </div>
+            <div id="searchbox">
+                <input type="text" class="searchbox" placeholder="Search">
+                <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </header>
+        <section id="meio">
+            <span></span>
+            <aside id="menu">
+                <div>
+                    <button id="mobilebtn" onclick="apper(-260)">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <ul>
+                        <li>
+                            <input type="checkbox" onclick=" checkAll('checkbox', this.checked)" checked><a>Todos</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('carne', this.checked)" checked> <a href="index.html#carne">Carne / Frangos</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('marga', this.checked)" checked> <a href="index.html#marga">Margarinas</labal>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('grao', this.checked)" checked> <a href="index.html#grao">Grãos</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('temp', this.checked)" checked><a href="index.html#temp">Temperos</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('doces', this.checked)" checked><a href="index.html#doces">Doçes</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('bebidas', this.checked)" checked><a href="index.html#bebidas">Bebidas</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('higi', this.checked)" checked><a href="index.html#higi">Higiene e limpeza</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('verduras', this.checked)" checked><a href="index.html#verduras">Verduras e Legumes</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('frutas', this.checked)" checked><a href="index.html#frutas">Frutas</a>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="checkbox" onclick="hideShow('peixe', this.checked)" checked><a href="index.html#peixe">Peixes e Derivados</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main>
+                <div id="products">
+                    <div class="carne" id="carne">
+                        <p>Carnes / Frangos</p>
+                        <figure>
+                            <img src="src/img1.png" alt="">
+                            <figcaption>
+                                <p class="description">Picanha Friboi tradicional peça a vácuo kg</p>
+                                <p class="fakeprice">R$ 79,90</p>
+                                <p class="descont">35%</p>
+                                <p class="price">R$ 57,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img2.png" alt="">
+                            <figcaption>
+                                <p class="description">Fraldinha Friboi peça kg</p>
+                                <p class="fakeprice">R$ 59,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 36,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img3.png" alt="">
+                            <figcaption>
+                                <p class="description">Contrafilé pedaço kg</p>
+                                <p class="fakeprice">R$ 69,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 41,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img4.png" alt="">
+                            <figcaption>
+                                <p class="description">Paleta de cordeiro Do Chef congelada peça kg
+                                </p>
+                                <p class="fakeprice">R$ 69,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 45,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure class="carne" hidden>
+                            <img src="src/img5.png" alt="">
+                            <figcaption>
+                                <p class="description">Cupim Friboi pedaço kg
+                                </p>
+                                <p class="fakeprice">R$ 59,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 36,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img6.png" alt="">
+                            <figcaption>
+                                <p class="description">Picanha suína Pamplona temperada resfriada peça kg
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 26,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img7.png" alt="">
+                            <figcaption>
+                                <p class="description">Costela suína Perdigão a granel kg
+
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 21,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img8.png" alt="">
+                            <figcaption>
+                                <p class="description">Bisteca suína Sadia a granel kg
+
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 17,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img9.png" alt="">
+                            <figcaption>
+                                <p class="description">Coxinha da asa de frango a granel kg
+
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 14,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img10.png" alt="">
+                            <figcaption>
+                                <p class="description">Linguiça toscana Seara a granel kg
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 15,29</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img11.png" alt="">
+                            <figcaption>
+                                <p class="description">Linguiça calabresa defumada Seara a granel kg
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 18,59</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="marga" id="marga">
+                        <p>Margarinas</p>
+                        <figure>
+                            <img src="src/img12.png" alt="">
+                            <figcaption>
+                                <p class="description">Margarina Qualy tradicional 500 g
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,99</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="grao" id="grao">
+                        <p>Grãos</p>
+                        <figure>
+                            <img src="src/img13.png" alt="">
+                            <figcaption>
+                                <p class="description">Arroz branco Blue Ville tipo 1 5 kg
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 22,98</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div  class="temp" id="temp">
+                        <p>Temperos</p>
+                        <figure>
+                            <img src="src/img14.png" alt="">
+                            <figcaption>
+                                <p class="description">Azeite de oliva Gallo clássico extra virgem vidro 500 ml
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 19,99</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div  class="doces" id="doces">
+                        <p>Doçes</p>
+                        <figure>
+                            <img src="src/img15.png" alt="">
+                            <figcaption>
+                                <p class="description">Leite condensado Moça semidesnatado TP 395 g
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,69</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img16.png" alt="">
+                            <figcaption>
+                                <p class="description">Chocolate em tablete Lacta sabores 90 g
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,19</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img17.png" alt="">
+                            <figcaption>
+                                <p class="description">Chocolate Lindt Lindor Milk ou Swiss Classic 100 g
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 19,90</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div  class="bebidas" id="bebidas">
+                        <p>Bebidas</p>
+                        <figure>
+                            <img src="src/img18.png" alt="">
+                            <figcaption>
+                                <p class="description">Refrigerante H2OH! sabores pet 1,5 L
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img19.png" alt="">
+                            <figcaption>
+                                <p class="description">Cerveja Bohemia puro malte lata 350 ml
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,49</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img20.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Espumante Casa Perini moscatel branco 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 59,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 46,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img21.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Espumante Salton moscatel branco 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 29,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img22.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Salton Intenso merlot tinto 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 31,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img23.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Frisante Mioranza suave rosé 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 29,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 19,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img24.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Frances Bois Mirail Rouge tinto 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 31,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img25.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Chileno Tres Toros cabernet sauvignon tinto 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 29,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img26.png" alt="">
+                            <figcaption>
+                                <p class="description">Vinho Português Terra Mãe tinto 750 ml
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 30,90</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div  class="higi" id="higi">
+                        <p>Higiene e limpeza</p>
+                        <figure>
+                            <img src="src/img27.png" alt="">
+                            <figcaption>
+                                <p class="description">Kit enxaguante bucal Colgate Plax Total 12 500 ml + Plax 250 ml
+                                </p>
+                                <p class="fakeprice">R$ 59,69</p>
+                                <p class="descont">35%</p><p class="price">R$ 49,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img28.png" alt="">
+                            <figcaption>
+                                <p class="description">Kit toalha umedecida Johnson’s c/ 48 unidades Leve 4 Pague 3
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 32,89</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img29.png" alt="">
+                            <figcaption>
+                                <p class="description">Lava roupas concentrado Ariel fragrâncias 1,2 L
+                                </p>
+                                <p class="fakeprice">R$ 29,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 17,90</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img30.png" alt="">
+                            <figcaption>
+                                <p class="description">Limpador Veja Gold multiuso original 500 ml com 10% de desconto
+
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img31.png" alt="">
+                            <figcaption>
+                                <p class="description">Papel higiênico Neve folha dupla ou tripla 20/30 metros com 4 unidades
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 6,99</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="verduras" id="verduras">
+                        <p>Verduras</p>
+                        <figure>
+                            <img src="src/img32.png" alt="">
+                            <figcaption>
+                                <p class="description">Abobrinha italiana kg
+                                </p>
+                                <p class="fakeprice">R$ 3,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 1,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img33.png" alt="">
+                            <figcaption>
+                                <p class="description">Alho Roxo cada 100g
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,89</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img34.png" alt="">
+                            <figcaption>
+                                <p class="description">Batata doce rosada kg
+                                </p>
+                                <p class="fakeprice">R$ 3,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 1,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img35.png" alt="">
+                            <figcaption>
+                                <p class="description">Berinjela kg
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 3,89</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img36.png" alt="">
+                            <figcaption>
+                                <p class="description">Cebola kg
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,49</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img37.png" alt="">
+                            <figcaption>
+                                <p class="description">Cenoura kg
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,29</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img42.png"alt="">
+                            <figcaption>
+                                <p class="description">Mandioquinha kg
+
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$6,99</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="peixe" id="peixe">
+                        <p>Peixes e Derivados</p>
+                        <figure>
+                            <img src="src/img38.png" alt="">
+                            <figcaption>
+                                <p class="description">Tilápia inteira fresca kg
+                                </p>
+                                <p class="fakeprice">R$ 27,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 17,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img39.png" alt="">
+                            <figcaption>
+                                <p class="description">Tambaqui de cativeiro inteiro fresco kg
+                                </p>
+                                <p class="fakeprice">R$ 37,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 21,79</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img40.png" alt="">
+                            <figcaption>
+                                <p class="description">Pintado de cativeiro inteiro fresco kg
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 28,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img41.png" alt="">
+                            <figcaption>
+                                <p class="description">Camarão Oceani descascado cozido congelado 400 g
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 39,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img43.png" alt="">
+                            <figcaption>
+                                <p class="description">Carne</p>
+                                <p class="fakeprice">R$ 59,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 49,90</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="frutas" id="frutas">
+                        <p>Frutas</p>
+                        <figure>
+                            <img src="src/img42.png" alt="">
+                            <figcaption>
+                                <p class="description">Mandioquinha kg
+                                </p>
+                                <p class="fakeprice">R$ 9,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 6,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img44.png" alt="">
+                            <figcaption>
+                                <p class="description">Pepino japonês kg
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img45.png" alt="">
+                            <figcaption>
+                                <p class="description">Pimentão verde kg
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 3,79</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img46.png" alt="">
+                            <figcaption>
+                                <p class="description">Tomate carmem kg
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 3,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img47.png" alt="">
+                            <figcaption>
+                                <p class="description">Tomate Grape Mel Trebeschi 180 g
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,39</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img48.png" alt="">
+                            <figcaption>
+                                <p class="description">Abacaxi pérola unid.
+
+                                </p>
+                                <p class="fakeprice">R$ 8,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 5,39</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img49.png" alt="">
+                            <figcaption>
+                                <p class="description">Abacate kg
+
+                                </p>
+                                <p class="fakeprice">R$ 8,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,59</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img50.png" alt="">
+                            <figcaption>
+                                <p class="description">Caqui fuyu kg
+
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img51.png" alt="">
+                            <figcaption>
+                                <p class="description">Goiaba vermelha kg
+
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 3,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img52.png" alt="">
+                            <figcaption>
+                                <p class="description">Laranja pera kg
+
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,79</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img53.png" alt="">
+                            <figcaption>
+                                <p class="description">Limão taiti kg
+
+                                </p>
+                                <p class="fakeprice">R$ 4,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 1,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img54.png" alt="">
+                            <figcaption>
+                                <p class="description">Maçã Fuji kg
+                                </p>
+                                <p class="fakeprice">R$ 7,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img55.png" alt="">
+                            <figcaption>
+                                <p class="description">Maçã Senninha pacote 1kg
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 4,49</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img56.png" alt="">
+                            <figcaption>
+                                <p class="description">Mamão papaya unid.
+                                </p>
+                                <p class="fakeprice">R$ 4,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img57.png" alt="">
+                            <figcaption>
+                                <p class="description">Manga tommy kg
+                                </p>
+                                <p class="fakeprice">R$ 5,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 3,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img58.png" alt="">
+                            <figcaption>
+                                <p class="description">Maracujá azedo kg
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 5,99
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img59.png" alt="">
+                            <figcaption>
+                                <p class="description">Mexerica ponkan kg
+                                </p>
+                                <p class="fakeprice">R$ 3,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 2,89</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img60.png" alt="">
+                            <figcaption>
+                                <p class="description">Pera williams kg
+                                </p>
+                                <p class="fakeprice">R$ 8,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 7,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img61.png" alt="">
+                            <figcaption>
+                                <p class="description">Uva branca bandeja 500 g
+                                </p>
+                                <p class="fakeprice">R$ 6,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 5,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img62.png" alt="">
+                            <figcaption>
+                                <p class="description">Uva preta bandeja 500 g
+                                </p>
+                                <p class="fakeprice">R$ 8,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 6,49</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </main>
+            <span></span>
+        </section>
+        <span></span>
+        <footer>
+            <div id="socialmidia">
+                <button>
+                    <i class="fa-brands fa-twitter fa-3x"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-google fa-3x"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-instagram fa-3x"></i>
+                </button>
+                <button>
+                    <i class="fa-brands fa-facebook fa-3x"></i>
+                </button>
+            </div>
+            <div id="contato">
+                <form action="">
+                    <input type="text" class="text" id="first" value="Nome" onfocus="expand('min-content')">
+                    <input type="text" class="text" value="E-mail">
+                    <input type="text" class="text" value="Assunto">
+                    <input type="text" class="text" value="Mensagem">
+                    <input type="submit" class="submit" onclick="expand('62px')">
+                </form>
+            </div>
+            <div id="copyright">
+                <p class="grupo">Eliane Medeiros - 28639375 | Jonas Da Silva - 29278791 | Carlos Vasconcelos - 29815282 | Willian Massao - 29864968 | Sabryna Ap. - 29981727</p>
+                <p class="year">@Copyright 1000ac. - 2022dc.</p>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
