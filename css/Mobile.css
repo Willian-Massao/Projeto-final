@@ -1,7 +1,7 @@
 header{
     height: 100px;
     width: 100%;
-    margin-top: -310px;
+    margin-top: -230px;
     padding-left: 20px; padding-right: 20px;
     justify-content: space-between;
 }
@@ -15,7 +15,7 @@ header{
     display: none;
 }
 #container{
-    margin-top: 310px;
+    margin-top: 230px;
 }
 #searchbox .searchbox{
     width: 80%;
