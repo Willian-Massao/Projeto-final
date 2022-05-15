@@ -36,8 +36,20 @@
                 <img src="src/logoA.png" alt="" class="logo">
             </div>
             <div id="searchbox">
-                <input type="text" class="searchbox" placeholder="Search">
-                <button type="submit" class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" class="searchbox" placeholder="Search" value="Pesquisar" onblur="search()">
+                <button class="searchbtn" onclick=""><i class="fa-solid fa-magnifying-glass" ></i></button>
+                
+            </div>
+            <div id="cascaded">
+                <figure>
+                    <img src="src/img1.png" alt="">
+                    <figcaption>
+                        <p class="description">Picanha Friboi tradicional peça a vácuo kg</p>
+                        <p class="fakeprice">R$ 79,90</p>
+                        <p class="descont">35%</p>
+                        <p class="price">R$ 57,99</p>
+                    </figcaption>
+                </figure>
             </div>
         </header>
         <section id="meio">
@@ -340,7 +352,7 @@
                         </figure>
                     </div>
                     <div  class="higi" id="higi">
-                        <p>Higiene e limpeza</p>
+                        <p>Higiene e Limpeza</p>
                         <figure>
                             <img src="src/img27.png" alt="">
                             <figcaption>
@@ -389,7 +401,7 @@
                         </figure>
                     </div>
                     <div class="verduras" id="verduras">
-                        <p>Verduras</p>
+                        <p>Verduras / Legumes</p>
                         <figure>
                             <img src="src/img32.png" alt="">
                             <figcaption>
@@ -445,66 +457,6 @@
                             </figcaption>
                         </figure>
                         <figure>
-                            <img src="src/img42.png"alt="">
-                            <figcaption>
-                                <p class="description">Mandioquinha kg
-
-                                </p>
-                                <p class="fakeprice">R$ 9,90</p>
-                                <p class="descont">35%</p><p class="price">R$6,99</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="peixe" id="peixe">
-                        <p>Peixes e Derivados</p>
-                        <figure>
-                            <img src="src/img38.png" alt="">
-                            <figcaption>
-                                <p class="description">Tilápia inteira fresca kg
-                                </p>
-                                <p class="fakeprice">R$ 27,90</p>
-                                <p class="descont">35%</p><p class="price">R$ 17,99</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="src/img39.png" alt="">
-                            <figcaption>
-                                <p class="description">Tambaqui de cativeiro inteiro fresco kg
-                                </p>
-                                <p class="fakeprice">R$ 37,90</p>
-                                <p class="descont">35%</p><p class="price">R$ 21,79</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="src/img40.png" alt="">
-                            <figcaption>
-                                <p class="description">Pintado de cativeiro inteiro fresco kg
-                                </p>
-                                <p class="fakeprice">R$ 39,90</p>
-                                <p class="descont">35%</p><p class="price">R$ 28,99</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="src/img41.png" alt="">
-                            <figcaption>
-                                <p class="description">Camarão Oceani descascado cozido congelado 400 g
-                                </p>
-                                <p class="fakeprice">R$ 49,90</p>
-                                <p class="descont">35%</p><p class="price">R$ 39,99</p>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="src/img43.png" alt="">
-                            <figcaption>
-                                <p class="description">Carne</p>
-                                <p class="fakeprice">R$ 59,90</p>
-                                <p class="descont">35%</p><p class="price">R$ 49,90</p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <div class="frutas" id="frutas">
-                        <p>Frutas</p>
-                        <figure>
                             <img src="src/img42.png" alt="">
                             <figcaption>
                                 <p class="description">Mandioquinha kg
@@ -549,6 +501,48 @@
                                 <p class="descont">35%</p><p class="price">R$ 2,39</p>
                             </figcaption>
                         </figure>
+                    </div>
+                    <div class="peixe" id="peixe">
+                        <p>Peixes e Derivados</p>
+                        <figure>
+                            <img src="src/img38.png" alt="">
+                            <figcaption>
+                                <p class="description">Tilápia inteira fresca kg
+                                </p>
+                                <p class="fakeprice">R$ 27,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 17,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img39.png" alt="">
+                            <figcaption>
+                                <p class="description">Tambaqui de cativeiro inteiro fresco kg
+                                </p>
+                                <p class="fakeprice">R$ 37,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 21,79</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img40.png" alt="">
+                            <figcaption>
+                                <p class="description">Pintado de cativeiro inteiro fresco kg
+                                </p>
+                                <p class="fakeprice">R$ 39,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 28,99</p>
+                            </figcaption>
+                        </figure>
+                        <figure>
+                            <img src="src/img41.png" alt="">
+                            <figcaption>
+                                <p class="description">Camarão Oceani descascado cozido congelado 400 g
+                                </p>
+                                <p class="fakeprice">R$ 49,90</p>
+                                <p class="descont">35%</p><p class="price">R$ 39,99</p>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="frutas" id="frutas">
+                        <p>Frutas</p>
                         <figure>
                             <img src="src/img48.png" alt="">
                             <figcaption>

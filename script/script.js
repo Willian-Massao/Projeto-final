@@ -43,3 +43,8 @@ function aa(){
 function apper(nsei){
     document.getElementById("menu").style.marginLeft = `${nsei}px`;
 }
+
+function search(){
+    let search = document.getElementsByClassName('searchbox').value;
+    console.log(search);
+}
