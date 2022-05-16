@@ -83,3 +83,21 @@ button#mobilebtn{
     background-color: rgb(49, 49, 49);
     transition: 100ms linear;
 }
+.grupo{
+    margin-left: 110px;
+    margin-right: 110px;
+}
+footer{
+    height: 550px;
+}
+.grupo{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.member{
+    text-align: center;
+    font-size: 0.8em;
+    width: fit-content;
+}
