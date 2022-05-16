@@ -88,7 +88,7 @@ button#mobilebtn{
     margin-right: 110px;
 }
 footer{
-    height: 550px;
+    height: min-content;
 }
 .grupo{
     display: flex;
