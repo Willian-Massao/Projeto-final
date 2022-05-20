@@ -24,11 +24,11 @@ header{
     position: fixed;
     top: 0%;
     width: 100%;
-    margin-top: -300px;
+    margin-top: -30vh;
     z-index: -1;
 }
 #background span{
-    background-image: url("/src/Atacadista.png");
+    background-image: url("src/Atacadista.png");
     background-repeat: no-repeat;
     background-size: 100%;
     margin-top: 0;
@@ -229,11 +229,11 @@ li>a:hover{
     padding: 30px;
 }
 .autoscrolltop button{
-    width: 100px;
-    height: 100px;
+    width: 11vh;
+    height: 11vh;
     border: none;
     background-color: #315292;
-    border-radius: 20px;
+    border-radius: 2vh;
 }
 .autoscrolltop button:active{
     animation-iteration-count: 1;
