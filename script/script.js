@@ -48,6 +48,7 @@ function toggle(mode, visible){
     document.getElementById(mode).style.display = visible;
 }
 
+
 function search(){
 
     const resultDiv = document.getElementById("result");
