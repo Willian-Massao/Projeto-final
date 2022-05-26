@@ -70,6 +70,5 @@ function search(){
         }
     }else if(search == ''){
         document.getElementById('cascaded').style.display = "none";
-        console.log("vazio");
     }
 }
