@@ -101,3 +101,13 @@ footer{
     font-size: 0.8em;
     width: fit-content;
 }
+#cascaded{
+    right: 0;
+    margin-right: 60px;
+    width: 236px;
+}
+@media screen and (max-width: 319px) {
+    body{
+        display: none;
+    }
+}

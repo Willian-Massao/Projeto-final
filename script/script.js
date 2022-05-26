@@ -44,7 +44,30 @@ function apper(nsei){
     document.getElementById("menu").style.marginLeft = `${nsei}px`;
 }
 
+function toggle(mode, visible){
+    document.getElementById(mode).style.display = visible;
+}
+
 function search(){
-    let search = document.getElementsByClassName('searchbox').value;
-    console.log(search);
+
+    const resultDiv = document.getElementById("result");
+
+    resultDiv.innerHTML = '';
+
+    let search = (document.getElementById("teste").value).toLowerCase();
+
+    if(search != ''){
+        let itemsUnfilted = document.getElementsByTagName("figure");
+        let items = [];
+        [].forEach.call( itemsUnfilted ,function(num) { items.push((num.children[1].children[0].outerText).toLowerCase());});
+        let result = items.filter(s => s.includes(search));
+        if(result != ''){
+        document.getElementById('cascaded').style.display = "unset";
+        [].forEach.call( result , function(g){ resultDiv.innerHTML += `<p>${g}</p>`;});
+        }else{
+            resultDiv.innerHTML += `<p>Produto não encontrado</p>`;
+        }
+    }else if(search == ''){
+        document.getElementById('cascaded').style.display = "none";
+    }
 }
