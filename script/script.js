@@ -1,3 +1,5 @@
+/*jshint esversion: 6 */
+
 var image = ["Atacadista.png","Atacadista2.png","Atacadista3.png"];
 var select = 0;
 
@@ -70,6 +72,5 @@ function search(){
         }
     }else if(search == ''){
         document.getElementById('cascaded').style.display = "none";
-        console.log("vazio");
     }
 }
